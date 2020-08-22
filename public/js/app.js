@@ -1,6 +1,3 @@
-console.log('Hi in javascript')
-
-
 const weatherform = document.querySelector('form')
 const address = document.querySelector('input')
 const message1 = document.querySelector('#message-1')
