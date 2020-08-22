@@ -5,6 +5,7 @@ const geocode = require('./utils/Geocode')
 const forcast = require('./utils/Forcast')
 // Creating the app.
 const app = express() 
+const port = process.env.PORT || 3000 
 
 // Define the path of the app.
 const viewpath = path.join(__dirname ,'../Templets/views')
@@ -61,6 +62,6 @@ app.get('*',(req,res)=>{
 
 
 // running the server at port number 
-app.listen(3000,()=>{
-    console.log('Connected to server at port 3000')
+app.listen(port,()=>{
+    console.log('Connected to server at port' + port)
 })
